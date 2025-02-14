@@ -73,5 +73,40 @@ console.log(somar(valor, valor2));
 
 
 class Pessoa{
+    nome: string;
+    sobreNome: string;
 
+    constructor(nome:string,  sobreNome:string){
+        this.nome;
+        this.sobreNome;
+    }
+        
+
+}  
+
+class Pessoa2 implements PessoaInterface{
+
+/*
+constructor com operador de parametros opcionais.
+-?
+*/
+    constructor(public nome:string, 
+        public sobreNome?:string, 
+        private idade?:number,
+        private cpf?:string,
+        private endereco?:string ){
+            this.nome = nome;
+            this.sobreNome = sobreNome;
+            this.cpf = cpf;
+            this.endereco = endereco;
+    
+        }
+        
 }
+
+let pessoa: Pessoa = new Pessoa("samuel","Melo");
+console.log(pessoa);
+
+let pessoa2: Pessoa2 = new Pessoa2("samuel");
+console.log(pessoa);
+
