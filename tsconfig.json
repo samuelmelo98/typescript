@@ -1,0 +1,12 @@
+/*
+Arquivo responsável de configurar como vamos exportar os arquivos, 
+quais arquivos vamos acompanhar e quais vamos ignorar.
+Configurçoes aqui dentro do tsconfig.
+
+*/
+
+{
+        "compilerOptions": {
+            "target": "ES3"
+        }
+}
